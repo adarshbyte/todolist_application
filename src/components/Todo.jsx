@@ -11,7 +11,7 @@ const Todo = (props)=>{
         })
     }
     return <li>
-        <input type="checkbox" id={id} checked={checked} onChange={handleCheck}/>
+        <input type="checkbox" id={id} checked={checked} onChange={handleCheck} aria-checked={checked}/>
         <p>{text}</p>
     </li>
 }

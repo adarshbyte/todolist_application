@@ -33,8 +33,9 @@ const Input = (props) => {
         cols={20}
         rows={20}
         placeholder="Add a new todo..."
+        aria-label="Todo input"
       />
-      <button type="button" onClick={handleSave}>
+      <button type="button" onClick={handleSave} aria-label="Save todo item">
         Save
       </button>
     </div>

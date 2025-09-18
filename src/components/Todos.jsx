@@ -2,7 +2,7 @@ import Todo from "./Todo";
 
 const Todos = (props)=>{
     const { todos, setTodos } = props;
-    return <ul>
+    return <ul aria-label="Todo list">
         {todos.map(todo=>{
             return <Todo key={todo.id} id={todo.id} text={todo.text} setTodos={setTodos} checked={todo.checked}/>
         })}
