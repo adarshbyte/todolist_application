@@ -6,11 +6,11 @@ describe("Todo App", () => {
   });
 
   it("adds a new todo", () => {
-    cy.get("textarea").type("Learn Cypress");
+    cy.get("textarea").type("Adding a todo");
     cy.get("button").contains("Save").click();
 
     cy.get("li").should("have.length", 1);
-    cy.get("li").should("contain.text", "Learn Cypress");
+    cy.get("li").should("contain.text", "Adding a todo");
   });
 
   it("checks a todo and updates localStorage", () => {
